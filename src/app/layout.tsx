@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Big_Shoulders, Permanent_Marker } from "next/font/google";
 import { siteUrl } from "@/data/site";
+import { PreviewMark } from "@/components/PreviewMark";
 import "./globals.css";
 
 const stamp = Big_Shoulders({ subsets: ["latin"], variable: "--font-bigshoulders", axes: ["opsz"] });
@@ -23,14 +24,14 @@ export const viewport: Viewport = {
   themeColor: "#161210",
 };
 
-const CONTRACT = `
+/* Design contract (kept in the source only, not shipped in the page):
 THESIS: Each tub presented like the best board in the lumberyard: stamped, tallied, crayon-marked and signed by the one man who built it. Refuses the plunge-brand default (dark lifestyle video, icy blue, spec-card grid) and his template's grey wash over the wood.
 OWN-WORLD: redwood heartwood fields, grading-ink black, one cold lumber-crayon blue, crayon yellow tally marks; mill grade stamps in heavy condensed caps, kraft tally tags with staples and punched holes, end-grain rings. His photos untinted.
 STORY: Visitors see the tub, learn what is built into it and that one maker builds each, choose cold, hot or both, and request a quote or call.
 FIRST VIEWPORT: his open tub on film full-bleed; a giant mill stamp KOLD KRATE (his words around it) slams in upper left; H1 below; stapled kraft "Get a quote" tag and phone beside it.
 FORM: assigned direction (5th of 7 on the grounded list: lumberyard grading), seed 2aa9d476.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
-`;
+*/
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -49,9 +50,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${stamp.variable} ${text.variable} ${crayon.variable} antialiased`}>
       <body>
-        <div hidden dangerouslySetInnerHTML={{ __html: `<!--${CONTRACT}-->` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
         {children}
+        <PreviewMark />
       </body>
     </html>
   );

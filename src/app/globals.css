@@ -243,3 +243,33 @@ html.lenis body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* the preview watermark's contact tag (PreviewMark); its position and visibility are inline */
+.preview-tag {
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100vw - 24px);
+  padding: 6px 14px 6px 6px;
+  background: rgb(22 18 16 / 0.88);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgb(217 185 139 / 0.35);
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.35);
+  color: var(--color-sap);
+  font: 600 12px/1.2 var(--font-text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.preview-tag b {
+  padding: 5px 9px 4px;
+  border-radius: 999px;
+  background: var(--color-crayon);
+  color: var(--color-ink);
+  font: 800 13px/1 var(--font-stamp);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.preview-tag span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
