@@ -3,7 +3,7 @@
 import { createContext, useContext, useState } from "react";
 import type { Plunge } from "@/data/krate";
 
-/** The plunge a visitor picks on the thermometer, carried down into the quote tag. */
+/** The plunge a visitor picks (cold, hot or a pair), carried down into the quote form. */
 const Ctx = createContext<{ plunge: Plunge; setPlunge: (p: Plunge) => void }>({ plunge: "cold", setPlunge: () => {} });
 
 export function ChoiceProvider({ children }: { children: React.ReactNode }) {

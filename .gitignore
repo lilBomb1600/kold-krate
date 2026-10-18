@@ -44,3 +44,4 @@ next-env.d.ts
 assets-inbox/
 .impeccable/decision/
 .impeccable/review/
+.impeccable/questions/

@@ -15,7 +15,7 @@ const tile =
     `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260">` +
       `<text x="210" y="130" text-anchor="middle" dominant-baseline="middle" transform="rotate(-24 210 130)" ` +
       `font-family="Arial Narrow, Arial, sans-serif" font-weight="800" font-size="26" letter-spacing="3" ` +
-      `fill="rgba(255,255,255,0.16)" stroke="rgba(0,0,0,0.10)" stroke-width="1">ARMAN DIGITAL · PREVIEW</text></svg>`,
+      `fill="rgba(31,37,41,0.11)" stroke="rgba(255,255,255,0.22)" stroke-width="1">ARMAN DIGITAL · PREVIEW</text></svg>`,
   );
 
 const LAYER: CSSProperties = {

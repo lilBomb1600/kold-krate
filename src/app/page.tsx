@@ -1,26 +1,24 @@
-import { BuiltIn } from "@/components/BuiltIn";
 import { ChoiceProvider } from "@/components/Choice";
-import { ColdHot } from "@/components/ColdHot";
 import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
-import { Maker } from "@/components/Maker";
-import { InkDefs } from "@/components/MillStamp";
 import { Nav } from "@/components/Nav";
+import { Pair } from "@/components/Pair";
 import { Quote } from "@/components/Quote";
+import { Reasons } from "@/components/Reasons";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { Specs } from "@/components/Specs";
 
 export default function Home() {
   return (
     <ChoiceProvider>
-      <InkDefs />
       <SmoothScroll />
       <Nav />
       <main>
         <Hero />
-        <BuiltIn />
-        <ColdHot />
-        <Maker />
+        <Reasons />
+        <Pair />
+        <Specs />
         <Gallery />
         <Quote />
       </main>

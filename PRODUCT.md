@@ -73,3 +73,12 @@ piece because the redwood grain differs. A mass-produced plunge brand cannot tru
 - Every claim comes from him. If he hasn't said it, the site doesn't say it.
 - One clear next step: request a quote, or call him.
 - The maker is the moat: one person in Santa Cruz builds every tub, and the site should feel like that.
+
+## Owner feedback (2026-10-17, after the first demo)
+
+He rejected the lumberyard version: "looks like every other piece of AI slop", "not authentic", things that "don't make
+sense", and the AI copywriting (headlines, paragraphs, bullet lists) worst of all. The thermometer didn't show contrast
+therapy. He wants cooler, softer blue/grayscale tones and a luxury aesthetic. What buyers must learn is why his instead of
+someone else's: his look nicer, are more spacious, and are handmade locally by a real person who cares about making each
+one the best he can. No AI imagery: the AI hero film was removed. Waiting on him: first name, a photo of him building,
+inside dimensions, any hot tub or pair photos.

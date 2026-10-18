@@ -1,38 +1,31 @@
-import { MillStamp } from "./MillStamp";
 import { krate } from "@/data/krate";
 
 export function Footer() {
   return (
-    <footer className="bg-ink px-5 pb-10 pt-20 sm:px-8">
-      <div className="mx-auto max-w-[1360px]">
-        <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
-          <div style={{ transform: "rotate(-3deg)" }} className="origin-left">
-            <MillStamp className="text-[clamp(44px,6vw,84px)]" />
-          </div>
-          <div className="grid gap-8 text-[15.5px] text-sap/80 sm:grid-cols-2 md:gap-16">
-            <div className="space-y-2">
-              <a href={krate.phoneHref} className="block font-bold text-sap hover:underline">
-                {krate.phone}
-              </a>
-              <a href={`mailto:${krate.email}`} className="block hover:underline">
-                {krate.email}
-              </a>
-              <a href={krate.instagram} target="_blank" rel="noopener noreferrer" className="block hover:underline">
-                {krate.handle}
-              </a>
-            </div>
-            <nav aria-label="Footer" className="space-y-2">
-              <a href="#krate" className="block hover:underline">The Krate</a>
-              <a href="#temp" className="block hover:underline">Cold or hot</a>
-              <a href="#maker" className="block hover:underline">Built by hand</a>
-              <a href="#quote" className="block hover:underline">Request a quote</a>
-            </nav>
-          </div>
+    <footer className="stone">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-5 py-14 sm:px-8 md:flex-row md:items-end md:justify-between lg:px-12">
+        <div>
+          <p className="font-display text-[15px] tracking-[0.24em] text-ink uppercase">Kold Krate</p>
+          <p className="mt-3 text-[15px] text-slate">Built by hand in Santa Cruz, California.</p>
         </div>
-        <div className="mt-16 flex flex-col gap-3 border-t border-sap/10 pt-6 text-[13px] text-sap/50 md:flex-row md:justify-between">
-          <p>© 2026 Kold Krate. Handcrafted in Santa Cruz, California.</p>
-          <p>Photos by Kold Krate; the opening film was animated from his photo with AI. A concept site by Arman Digital, not affiliated with Kold Krate.</p>
-        </div>
+        <ul className="flex flex-wrap gap-x-8 gap-y-3 text-[15px]">
+          <li>
+            <a href={krate.phoneHref} className="tnum text-ink hover:underline">
+              {krate.phone}
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${krate.email}`} className="text-ink hover:underline">
+              {krate.email}
+            </a>
+          </li>
+          <li>
+            <a href={krate.instagram} target="_blank" rel="noopener noreferrer" className="text-ink hover:underline">
+              Instagram {krate.handle}
+            </a>
+          </li>
+        </ul>
+        <p className="text-[13.5px] text-slate">© 2026 Kold Krate</p>
       </div>
     </footer>
   );
