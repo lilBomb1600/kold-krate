@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   title: "Kold Krate · Redwood cold plunges, built by hand in Santa Cruz",
   description,
   alternates: { canonical: "/" },
+  // keep it out of search results while it is under construction
+  robots: { index: false, follow: false },
   openGraph: { type: "website", siteName: "Kold Krate", title: "Kold Krate · Redwood cold plunges, built by hand in Santa Cruz", description, locale: "en_US" },
   twitter: { card: "summary_large_image", title: "Kold Krate · Redwood cold plunges, built by hand in Santa Cruz", description },
 };
