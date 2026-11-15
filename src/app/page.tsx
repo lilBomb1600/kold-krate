@@ -8,10 +8,17 @@ import { Quote } from "@/components/Quote";
 import { Reasons } from "@/components/Reasons";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Specs } from "@/components/Specs";
-import { krate } from "@/data/krate";
+import { krate, meta } from "@/data/krate";
+import { pageMetadata, privatePageMetadata } from "@/lib/seo/metadata";
 
 /** While the redesign is being finished, the live link shows a holding page. Set to false to show the site. */
 const UNDER_CONSTRUCTION = true;
+
+// SEO kit: the holding page stays noindex even if NEXT_PUBLIC_LICENSED gets set before the relaunch.
+export const metadata = {
+  ...pageMetadata({ title: meta.title, description: meta.description, path: "/" }),
+  ...(UNDER_CONSTRUCTION ? privatePageMetadata : {}),
+};
 
 export default function Home() {
   return UNDER_CONSTRUCTION ? <UnderConstruction /> : <Site />;

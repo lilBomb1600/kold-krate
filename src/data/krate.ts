@@ -17,6 +17,17 @@ export const krate = {
   handle: "@koldkrate",
 };
 
+/** Page title + description (moved here from layout.tsx so the SEO kit reads them from the data file). */
+export const meta = {
+  title: "Kold Krate · Redwood cold plunges, built by hand in Santa Cruz",
+  description:
+    "Redwood cold plunges built by hand in Santa Cruz. Roomier than the steel and plastic tubs online, and a lot better looking. Hot plunges too.",
+  /** What the JSON-LD says the business does (unchanged from the earlier hand-written JSON-LD). */
+  about: "Cold and hot plunges built by hand from California redwood in Santa Cruz, CA.",
+  /** src/app/opengraph-image.alt.txt */
+  ogAlt: "Kold Krate: an open redwood cold plunge beside the words Redwood cold plunges, built by hand in Santa Cruz",
+};
+
 /** Waiting on him: his first name and a photo of him in the shop. */
 export const maker: { name: string | null; photo: { src: string; w: number; h: number; alt: string } | null } = {
   name: null,
